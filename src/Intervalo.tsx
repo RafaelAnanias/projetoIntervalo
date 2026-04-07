@@ -3,6 +3,10 @@
 import { View, Text } from "react-native"
 import { MinMax } from "./minmax"
 
+const gerarAleatorio = (min: number, max: number) => {
+    return //Lógica
+}
+
 const Intervalo = (params: MinMax) => {
     return (
         <View>
