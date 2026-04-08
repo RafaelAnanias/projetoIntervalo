@@ -1,22 +1,27 @@
-//Receba dois números de um inteiro de un intervalo (MIDIInput, máx)
-
 import { View, Text } from "react-native"
 import { MinMax } from "./minmax"
+import Aleatorio from "./Aleatorio"
 
 const gerarAleatorio = (min: number, max: number) => {
-    return //Lógica
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 const Intervalo = (params: MinMax) => {
+
+    const min = params.min ?? 0
+    const max = params.max ?? 100
+
+    const numero = gerarAleatorio(min, max)
+
     return (
         <View>
-
             <Text> 
-                Min = {params.min ?? 0} e Max = {params.max ?? 0}
-                
+                Min = {min} e Max = {max}
             </Text>
 
+            <Aleatorio numero={numero} />
         </View>
     )
 }
+
 export default Intervalo

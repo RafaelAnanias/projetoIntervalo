@@ -1,11 +1,9 @@
 import { Text } from "react-native"
 
-const Aletorio = (params: any) => {
-
+const Aleatorio = (props: any) => {
     return (
 
-        <Text>Math.random()</Text>
-
-
+        <Text>Número aleatório: {props.numero}</Text>
     );
 };
+export default Aleatorio;
