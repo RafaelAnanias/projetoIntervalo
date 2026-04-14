@@ -15,7 +15,7 @@ export default function App() {
           setMin(+valor)
         }} />
 
-      <TextInput value={max.toString()}
+      <TextInput style={styles.input} value={max.toString()}
         keyboardType='numeric'
         onChangeText={(valor) => {
           setMax(+valor)
